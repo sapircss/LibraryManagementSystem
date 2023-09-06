@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="libraryManagementDataSet1" targetNamespace="http://tempuri.org/libraryManagementDataSet1.xsd" xmlns:mstns="http://tempuri.org/libraryManagementDataSet1.xsd" xmlns="http://tempuri.org/libraryManagementDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="libraryManagementConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="libraryManagementConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LibraryManagementSystem.Properties.Settings.GlobalReference.Default.libraryManagementConnectionString" Provider="Microsoft.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="books_stockTableAdapter" GeneratorDataComponentClassName="books_stockTableAdapter" Name="books_stock" UserDataComponentName="books_stockTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="libraryManagementConnectionString (Settings)" DbObjectName="libraryManagement.dbo.books_stock" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT upc, title, quantity FROM dbo.books_stock</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="upc" DataSetColumn="upc" />
+              <Mapping SourceColumn="title" DataSetColumn="title" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CD_stockTableAdapter" GeneratorDataComponentClassName="CD_stockTableAdapter" Name="CD_stock" UserDataComponentName="CD_stockTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="libraryManagementConnectionString (Settings)" DbObjectName="libraryManagement.dbo.CD_stock" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT upc, title, quantity FROM dbo.CD_stock</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="upc" DataSetColumn="upc" />
+              <Mapping SourceColumn="title" DataSetColumn="title" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DVD_stockTableAdapter" GeneratorDataComponentClassName="DVD_stockTableAdapter" Name="DVD_stock" UserDataComponentName="DVD_stockTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="libraryManagementConnectionString (Settings)" DbObjectName="libraryManagement.dbo.DVD_stock" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT upc, title, quantity FROM dbo.DVD_stock</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="upc" DataSetColumn="upc" />
+              <Mapping SourceColumn="title" DataSetColumn="title" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="libraryManagementDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="libraryManagementDataSet1" msprop:Generator_DataSetName="libraryManagementDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="books_stock" msprop:Generator_RowEvHandlerName="books_stockRowChangeEventHandler" msprop:Generator_RowDeletedName="books_stockRowDeleted" msprop:Generator_RowDeletingName="books_stockRowDeleting" msprop:Generator_RowEvArgName="books_stockRowChangeEvent" msprop:Generator_TablePropName="books_stock" msprop:Generator_RowChangedName="books_stockRowChanged" msprop:Generator_RowChangingName="books_stockRowChanging" msprop:Generator_TableClassName="books_stockDataTable" msprop:Generator_RowClassName="books_stockRow" msprop:Generator_TableVarName="tablebooks_stock" msprop:Generator_UserTableName="books_stock">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="upc" msprop:Generator_ColumnPropNameInRow="upc" msprop:Generator_ColumnPropNameInTable="upcColumn" msprop:Generator_ColumnVarNameInTable="columnupc" msprop:Generator_UserColumnName="upc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="title" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnPropNameInTable="titleColumn" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_UserColumnName="title">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_UserColumnName="quantity">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CD_stock" msprop:Generator_RowEvHandlerName="CD_stockRowChangeEventHandler" msprop:Generator_RowDeletedName="CD_stockRowDeleted" msprop:Generator_RowDeletingName="CD_stockRowDeleting" msprop:Generator_RowEvArgName="CD_stockRowChangeEvent" msprop:Generator_TablePropName="CD_stock" msprop:Generator_RowChangedName="CD_stockRowChanged" msprop:Generator_RowChangingName="CD_stockRowChanging" msprop:Generator_TableClassName="CD_stockDataTable" msprop:Generator_RowClassName="CD_stockRow" msprop:Generator_TableVarName="tableCD_stock" msprop:Generator_UserTableName="CD_stock">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="upc" msprop:Generator_ColumnPropNameInRow="upc" msprop:Generator_ColumnPropNameInTable="upcColumn" msprop:Generator_ColumnVarNameInTable="columnupc" msprop:Generator_UserColumnName="upc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="title" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnPropNameInTable="titleColumn" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_UserColumnName="title">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_UserColumnName="quantity">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DVD_stock" msprop:Generator_RowEvHandlerName="DVD_stockRowChangeEventHandler" msprop:Generator_RowDeletedName="DVD_stockRowDeleted" msprop:Generator_RowDeletingName="DVD_stockRowDeleting" msprop:Generator_RowEvArgName="DVD_stockRowChangeEvent" msprop:Generator_TablePropName="DVD_stock" msprop:Generator_RowChangedName="DVD_stockRowChanged" msprop:Generator_RowChangingName="DVD_stockRowChanging" msprop:Generator_TableClassName="DVD_stockDataTable" msprop:Generator_RowClassName="DVD_stockRow" msprop:Generator_TableVarName="tableDVD_stock" msprop:Generator_UserTableName="DVD_stock">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="upc" msprop:Generator_ColumnPropNameInRow="upc" msprop:Generator_ColumnPropNameInTable="upcColumn" msprop:Generator_ColumnVarNameInTable="columnupc" msprop:Generator_UserColumnName="upc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="title" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnPropNameInTable="titleColumn" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_UserColumnName="title">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_UserColumnName="quantity">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
